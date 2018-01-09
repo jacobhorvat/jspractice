@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Car</title>
+  </head>
+  <body>
+
+    <h1>Let's Build a Car</h1>
+    <p id="car_demo"></p>
+
+    <script>
+
+    var person = {
+                  fname:"Jacob",
+                  lname:"Horvat",
+                  fullname: function() {
+                      return this.fname + " " + this.lname;
+                  }
+              };
+              
+    var car = {
+                type:"Tesla",
+                model:"Roadster",
+                color:"Blue",
+                fullCar: function() {
+                  return this.color + " " + this.type + " " + this.model;
+                }
+              };
+
+    document.getElementById("car_demo").innerHTML = person.fullname() + " would like to own a " + car.fullCar() + " " + "someday.";
+
+
+    </script>
+  </body>
+</html>
